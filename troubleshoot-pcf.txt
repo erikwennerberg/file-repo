@@ -1,0 +1,20 @@
+cf login --skip-ssl-validation
+Email - pcf-previewer
+API endpoint: https://api.sys.cookie-nonprod-east.pcf.infra.marcus.com
+
+Select project-cookie org (#3)
+
+
+cf ssh accounts-service-wiremock
+
+Root of service
+
+Check logs:
+~/app/.java-buildpack/app_dynamics_agent/ver4.5.7.25056/logs
+
+agent.2019_09_06__15_26_24.log
+
+
+[AD Thread Pool-Global1] 06 Sep 2019 15:27:27,265 ERROR ConfigurationChannel - HTTP Request failed: HTTP/1.1 401 Unauthorized
+
+Cf env
